@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles/spa.css">
+
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <div class="page active" id="login">
+      <h1>Login</h1>
+      <ol>
+        <li><a href="#" data-target="login" class="nav-link">LOGIN</a></li>
+        <li><a href="#" data-target="register" class="nav-link">REGISTER</a></li>
+
+      </ol>
+
+      <div>
+        <div class="login-page">
+          <link href='https://fonts.googleapis.com/css?family=Ubuntu:500' rel='stylesheet' type='text/css'>
+          <div class="login">
+            <div class="login-header">
+              <h1>Login</h1>
+            </div>
+            <div class="login-form">
+              <h3>Username:</h3>
+              <input type="text" placeholder="Username" id="userName" /><br>
+              <h3>Password:</h3>
+              <input type="password" placeholder="Password" id="password" />
+              <br>
+              <input type="button" onclick="loginFunc()" value="Login" class="login-button">
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="page" id="register">
+      <h1>Register</h1>
+      <ol>
+        <li><a href="#" data-target="login" class="nav-link">LOGIN</a></li>
+        <li><a href="#" data-target="register" class="nav-link">REGISTER</a></li>
+
+      </ol>
+      <div id="register">
+        <section class="login-panel">
+          <div class="left-side"></div>
+          <div class="right-side">
+            <h1>Sign Up</h1>
+            <p>Sign up and get a free pressent</p>
+            <input type="text" name="name" id="name" placeholder="Name" required>
+            <input type="text" id="city" placeholder="city">
+            <input type="text" id="address" placeholder="address">
+            <input type="password" name="name" id="rpassword" placeholder="Password" required>
+            <input type="submit" value="let's go" class="submit-btn" onclick="registerFunc()">
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="page" id="phones">
+      <h1>Phones</h1>
+      <ol>
+        <li><a href="#" data-target="login" class="nav-link">LOGIN</a></li>
+        <li><a href="#" data-target="register" class="nav-link">REGISTER</a></li>
+        <li><a href="#" data-target="phones" class="nav-link">PHONES</a></li>
+      </ol>
+      <div id="phonesListt">
+      </div>
+      <div id="addInputs"></div>
+      <div id="updateInputs"></div>
+    </div>
+
+  </main>
+</body>
+<script src="../js/phones.js"></script>
+<script src="../js/DB.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/register.js"></script>
+<script src="../js/server.js"></script>
+<script src="../js/fxmlhttprequest.js"></script>
+<script src="../js/spa.js"></script>
+
+</html>

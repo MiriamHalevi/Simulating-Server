@@ -1,0 +1,41 @@
+/**** DEFAULTS ****/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px; 
+    line-height: 1.6;
+    font-family: sans-serif;
+}
+
+/**** PAGES ****/
+.page{
+    display: none;
+    width: 100%;
+    min-height: 100%;
+    position: fixed; 
+    padding: 1rem 2rem;
+}
+.active{
+    display: block; 
+}
+#login{
+    background-color: palevioletred;
+}
+#register{
+    background-color: hsl(180, 40%, 45%);
+}
+#phones{
+    background-color: hsl(300, 80%, 52%);
+}
+h1{
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.4s;
+}
+.big{
+    font-size: 5rem;
+    font-weight: 900;
+}
